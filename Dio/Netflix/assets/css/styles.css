@@ -1,0 +1,153 @@
+:root{
+    --vermelho:#111fe4;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*! Elementos base */
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 5px;
+    color:var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+
+}
+
+.bg-footer {
+   padding: 10px;
+    
+    text-align: center;
+}
+
+/*! Filme Principal */
+.filmePrincipal{
+    font-size: 16px;
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50) 100%), url('/assets/img/capa.jpg');
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.filmePrincipal .descricao{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    width: 200px;
+    height: 50px;
+
+
+    padding: 20px;
+    margin-right: 15px;
+
+    cursor: pointer; /* quando a pessoa passar o mouse vera que é clicavel*/
+    transition: .3s ease all;
+}
+.botao i{
+    margin-right: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filmePrincipal .container{
+    width: 50%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    transition: 1s;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.item  :hover{
+    opacity: 30%;
+    cursor: pointer;
+}
+
+/*! edição do texto das images*/
+
+/* Carecteristicas de tudo que esta dentro da Div e com Link */
+/*
+
+/* Efeitos do texto */
+.text{
+    border: 2px solid white;
+    display:block;
+    margin-left:10px;
+    color:rgb(255, 255, 255);
+    position:absolute;
+    bottom:0;
+    left:0;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+/* Efeitos do texto quando o mouse estive em cima da Imagem */ 
+.item :hover .text{
+    opacity:1;
+    filter:alpha(opacity=100);
+    
+}

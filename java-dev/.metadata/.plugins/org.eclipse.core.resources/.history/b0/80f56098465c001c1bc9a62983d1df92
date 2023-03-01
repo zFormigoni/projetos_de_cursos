@@ -1,0 +1,22 @@
+package enviando_email;
+
+import javax.mail.Transport;
+
+public class App {
+	
+	public static void main(String[] args) {		
+														
+		Objeto_Enviar_Email email = new Objeto_Enviar_Email();
+		
+		email.setRemetente("vitor - java");
+		email.setAssunto_email("teste como objeto enviar email");
+		email.setCorpo_email("funcionou");
+		
+			System.out.println("email enviado");
+			
+
+	
+	
+		
+	}    
+}

@@ -1,0 +1,62 @@
+body{
+    background:  rgb(165, 162, 162);      /*altera a cor de fundo da pagina*/
+    font-family: 'Segoe UI';                /*altera a font da pagina*/
+    max-width: 1000px;                       /*limita o tamanho da pagina para no maximo 1000px*/  
+    margin: auto;                           /*cria uma margem que se adequa ao tamanho da tela*/
+}
+
+#title, .subtitle, .post_title{
+    color: black;
+}
+
+.title{
+    margin: 0;
+    font-size: 40px;
+    text-transform: initial;
+    text-align: center;
+    text-decoration: underline;
+}
+
+a{
+text-decoration: underline;
+color: black;
+}
+
+.post_title{
+    font-size: 16px  ;
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 15px;            /*altera a distancia do titulo do post ate a imagem*/
+}
+
+.post{
+    background: rgb(80, 78, 78);  /*altera a cor de fundo do post*/
+    padding: 10px;
+    border: 3px solid #000;       /*  borda do post    */
+    margin-bottom: 15px;
+    border-radius: 15px;            /*borda arredondada no post*/
+}
+
+.post_content{                     
+    /*texto do post*/
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: initial;
+    text-align: justify;
+}
+
+.post_image{
+    margin-bottom: 15px;            /*altera a distancia da imagem com o texto a baixo*/
+    width: 100%;                    /*desse modo a imagem sempre vai respeitar o elemento de fora*/
+}
+
+.contacts_list{
+    list-style-type: none;
+    padding: 15px;
+    margin: 0;
+    text-align: right;
+}
+
+.contacts_list li a{
+    text-decoration: none;
+}

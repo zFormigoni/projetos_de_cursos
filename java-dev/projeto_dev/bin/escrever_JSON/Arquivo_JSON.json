@@ -1,0 +1,14 @@
+[
+  {
+    "nome": "nome_US1",
+    "login": "log_US1",
+    "senha": "senha_US1",
+    "cpf": "cpf_US1"
+  },
+  {
+    "nome": "nome_US2",
+    "login": "log_US2",
+    "senha": "senha_US2",
+    "cpf": "cpf_US2"
+  }
+]

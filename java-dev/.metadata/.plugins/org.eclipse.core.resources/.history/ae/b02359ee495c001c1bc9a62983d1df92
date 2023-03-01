@@ -1,0 +1,21 @@
+package enviando_email;
+
+
+public class AppTest{
+	
+	
+	@org.junit.Test
+	public void testEmail() throws Exception {
+	Objeto_Enviar_Email email = new Objeto_Enviar_Email(
+			"assunto",							//	assunto 
+			"remetente",						//	remetente
+			"vitor.formigoni@gmail.com",		//	lista destino
+			"corpo email");						//	corpo email	
+	email.enviar_email();	
+	
+	Thread.sleep(500);
+	//caso o email nn seja enviado colocar tempo de espera para testes
+	
+	System.out.println("email enviado");
+   }
+}

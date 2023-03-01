@@ -1,0 +1,15 @@
+package enviando_email;
+
+public class App {
+	
+	public static void main(String[] args) {		
+														
+			
+			System.out.println("email enviado");
+			
+		
+	
+	
+		
+	}    
+}

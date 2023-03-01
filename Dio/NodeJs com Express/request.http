@@ -1,0 +1,25 @@
+
+POST http://localhost:3000/users
+Content-Type: application/json 
+
+{
+    "name": "teste",
+    "id": 20
+}
+
+###
+
+GET  http://localhost:3000/users
+###
+
+PUT http://localhost:2001/products/99237e99-3c34-4746-9110-9c522751d386 
+Content-Type: application/json
+
+{
+    "name": "caderno branco",
+    "price": 20
+}
+
+###
+
+DELETE http://localhost:2001/products/cbd65c9e-c4a8-4e0c-bfa8-ed66ec6c9c3c 

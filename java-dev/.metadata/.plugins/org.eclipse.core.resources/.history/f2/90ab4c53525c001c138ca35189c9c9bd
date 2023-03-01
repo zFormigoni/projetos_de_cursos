@@ -1,0 +1,37 @@
+package enviando_email;
+
+
+public class AppTest{
+	
+	
+	@org.junit.Test
+	public void testEmail() throws Exception {
+		
+		StringBuilder stringBuilderTextoEmail = new StringBuilder();
+		
+		//editando texto em html 
+		stringBuilderTextoEmail.append("olá, <br/><br/>"); 	// <br/> == quebra de linha em HTML
+		stringBuilderTextoEmail.append("testando email em html, <br/>");
+		
+		stringBuilderTextoEmail.append("<a target=\"blank\" href=\"https://www.youtube.com/watch?v=E8QDdy_NoA8&t=2915s\">");
+		
+		
+		
+		
+		
+		
+		
+		Objeto_Enviar_Email email = new Objeto_Enviar_Email(
+			"assunto: TESTE HTML",							//	assunto 
+			"HTML",						//	remetente
+			"testejava2003@gmail.com, vitor.formigoni@gmail.com, vitorformigoni2003@gmail.com",		//	lista destino
+			stringBuilderTextoEmail.toString());						//	corpo email	
+	
+	
+		// email.enviar_email(false);	//	enviar sem HTML 	
+		email.enviar_email(true);		//	enviar com HTML
+	
+		
+		System.out.println("email enviado");
+   }
+}
